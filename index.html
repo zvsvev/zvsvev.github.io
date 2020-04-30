@@ -2,6 +2,7 @@
  
     <figure class="card">
       <figcaption>
+          <title>Muhammad Ulinnuha | Game Test</title>
         <h2>TES <span>GAME</span></h2>
         <p>Zeeeb Mhank</p>
         <div class="icons">
@@ -134,7 +135,8 @@ function updateGameArea() {
         myObstacles[i].x += -1;
         myObstacles[i].update();
     }
-    myScore.text="SCORE: " + myGameArea.frameNo;
+    myScore.text="SKOR ANDA: " + myGameArea.frameNo;
+    myHighScore.text="TERTINGGI:" +myGameArea.frameNo;
     myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
@@ -153,6 +155,7 @@ function accelerate(n) {
 <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">TERBANG TERBANG TERBANG</button>
 
 <p><b>Petunjuk</b></p>
-<p>Press "TERBANG" untuk menjaga objek agar tidak mati</p>
+<p><center>"TERBANG" untuk menjaga objek agar tidak mati</center></p>
+<p>Muat Ulang Untuk Bermain Kembali</p>
 </body>
 </html>
